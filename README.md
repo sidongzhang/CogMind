@@ -7,9 +7,9 @@ A lightweight LLM training framework built from the ground up for educational pu
 阶段一：奠基 (1-2周) - 核心组件打造
 目标： 实现 Transformer 的所有基本模块，并具备完整的单元测试。
 
-Week 1: ✅ 注意力机制、⬜ 位置编码、⬜ 前馈网络
+Week 1: ✅ 注意力机制、✅ 位置编码、✅ 前馈网络
 
-Week 2: ⬜ LayerNorm、⬜ 残差连接、⬜ Embedding 层
+Week 2: ✅ LayerNorm、⬜ 残差连接、⬜ Embedding 层
 
 阶段二：集成 (1-2周) - 模型组装与数据流
 目标： 将模块组装成完整的 Encoder、Decoder 和 Transformer 模型，并建立数据加载流程。
@@ -42,3 +42,7 @@ Week 10: ⬜ 最终测试、⬜ 性能基准评估、⬜ 撰写项目文档
 - ✅ 支持因果掩码和填充掩码
 - ✅ 编写了完整的测试用例
 - ✅ 理解并实现多头注意力机制，掌握分头计算与合并的原理
+- ✅ 前馈网络
+
+### day02
+- ✅ 层归一化

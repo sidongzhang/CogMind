@@ -1,11 +1,13 @@
 from .attention import ScaledDotProductAttention, MultiHeadAttention
 from .positional_encoding import PositionalEncoding
-from .feedforward import FeedForward, PositionWiseFeedForward
+from .feed_forward import FeedForward, PositionWiseFeedForward
+from .layer_norm import LayerNorm
 
 __all__ = [
     'ScaledDotProductAttention', 
     'MultiHeadAttention',
     'PositionalEncoding',
     'FeedForward',
-    'PositionWiseFeedForward'
+    'PositionWiseFeedForward',
+    'LayerNorm'
 ]
