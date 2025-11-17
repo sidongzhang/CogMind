@@ -124,6 +124,8 @@ class MultiHeadAttention(nn.Module):
 
     
 # 测试代码
+
+# 简单测试缩放点积注意力机制
 def test_attention():
     """简单测试函数"""
     batch_size, seq_len, d_k, d_v = 2, 4, 8, 16
@@ -140,6 +142,8 @@ def test_attention():
     
     return output, weights
 
+
+# 简单测试多头注意力机制
 def test_multihead_attention():
     """测试多头注意力"""
     batch_size, seq_len, d_model, num_heads = 2, 4, 8, 2
@@ -157,5 +161,5 @@ def test_multihead_attention():
     print(f"注意力权重有 {num_heads} 个头，每个头学习不同的注意力模式")
 
 if __name__ == "__main__":
-    test_attention()
-    test_multihead_attention()
+    test_attention() # 测试缩放点积注意力
+    test_multihead_attention() # 测试多头注意力
