@@ -9,7 +9,7 @@ A lightweight LLM training framework built from the ground up for educational pu
 
 Week 1: ✅ 注意力机制、✅ 位置编码、✅ 前馈网络
 
-Week 2: ✅ LayerNorm、⬜ 残差连接、⬜ Embedding 层
+Week 2: ✅ LayerNorm、✅ 残差连接、⬜ Embedding 层
 
 阶段二：集成 (1-2周) - 模型组装与数据流
 目标： 将模块组装成完整的 Encoder、Decoder 和 Transformer 模型，并建立数据加载流程。
@@ -46,3 +46,4 @@ Week 10: ⬜ 最终测试、⬜ 性能基准评估、⬜ 撰写项目文档
 
 ### day02
 - ✅ 层归一化
+- ✅ 残差连接
