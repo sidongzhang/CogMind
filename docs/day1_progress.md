@@ -11,7 +11,7 @@
 
 
 # 今日疑问
-### 1.d_k是什么
+## 1.d_k是什么
 答：d_k 是键向量和查询向量的维度。
  - Q (Query)：查询向量，表示"我在找什么"
  - K (Key)：键向量，表示"我有什么信息"（可以提供的特征）
@@ -25,6 +25,7 @@
  - batch_size: 同时处理多少个样本（如2个句子）
  - seq_len: 序列长度（如每个句子4个词）
  - d_k: 每个词的向量维度（如8维）
+
 ## 3.为啥会有两次掩码
  - 第一次掩码 - 因果掩码 (Causal Mask)：
      - 用途：确保在生成文本时，每个词只能看到它之前的词，不能"偷看"未来的词
@@ -32,8 +33,20 @@
  - 第二次掩码 - 填充掩码 (Padding Mask)：
      - 用途：忽略填充符号（padding tokens），不让模型关注无意义的填充位置
      - 场景：处理变长序列时使用
+
 ## 4.掩码那里具体怎么实现的，为什么这样写可以实现
 掩码的核心思想：在 softmax 之前，把要屏蔽的位置设为负无穷
+// ...existing code...
+```python
+if self.causal:
+    seq_len = scores.size(-1)
+    causal_mask = torch.triu(
+        torch.ones((seq_len, seq_len), device=scores.device),
+        diagonal=1
+    ).bool()
+    scores.masked_fill_(causal_mask, float('-inf'))
+```
+// ...existing code...
 ### eg 步骤分解：
 #### 1. 创建掩码矩阵:
     要屏蔽的位置为1，其他为0
