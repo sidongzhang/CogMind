@@ -4,6 +4,7 @@ from .feed_forward import FeedForward, PositionWiseFeedForward
 from .layer_norm import LayerNorm
 from .residual import ResidualConnection, PreNormResidual, PostNormResidual
 from .encoder import TransformerEncoderLayer, TransformerEncoder
+from .embedding import TokenEmbedding, SharedEmbedding, Embeddings
 
 __all__ = [
     'ScaledDotProductAttention', 
@@ -16,5 +17,8 @@ __all__ = [
     'PreNormResidual', 
     'PostNormResidual',
     'TransformerEncoderLayer',
-    'TransformerEncoder'
+    'TransformerEncoder',
+    'TokenEmbedding',
+    'SharedEmbedding',
+    'Embeddings'
 ]
