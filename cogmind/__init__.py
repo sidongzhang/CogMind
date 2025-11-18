@@ -7,6 +7,7 @@ from .encoder import TransformerEncoderLayer, TransformerEncoder
 from .embedding import TokenEmbedding, SharedEmbedding, Embeddings
 from .decoder import TransformerDecoderLayer, TransformerDecoder
 from .transformer import Transformer
+from .loss import LabelSmoothingCrossEntropy
 
 __all__ = [
     'ScaledDotProductAttention', 
@@ -25,5 +26,6 @@ __all__ = [
     'Embeddings',
     'TransformerDecoderLayer',
     'TransformerDecoder',
-    'Transformer'
+    'Transformer',
+    'LabelSmoothingCrossEntropy'
 ]
