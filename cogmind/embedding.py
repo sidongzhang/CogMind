@@ -3,6 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import math
 
+
+from .positional_encoding import PositionalEncoding
+
 class TokenEmbedding(nn.Module):
     """
     词嵌入层 - 将离散的词索引转换为连续的向量表示

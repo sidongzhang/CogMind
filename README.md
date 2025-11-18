@@ -14,7 +14,7 @@ Week 2: ✅ LayerNorm、✅ 残差连接、✅ Embedding 层
 阶段二：集成 (1-2周) - 模型组装与数据流
 目标： 将模块组装成完整的 Encoder、Decoder 和 Transformer 模型，并建立数据加载流程。
 
-Week 3: ⬜ EncoderLayer/DecoderLayer, ⬜ 完整 Transformer
+Week 3: ✅ EncoderLayer/DecoderLayer, ✅ 完整 Transformer
 
 Week 4: ⬜ BPE 分词器、⬜ 数据加载器、⬜ 简单训练循环
 
@@ -38,9 +38,7 @@ Week 10: ⬜ 最终测试、⬜ 性能基准评估、⬜ 撰写项目文档
 ```
 
 ### day01
-- ✅ 实现了缩放点积注意力机制 (ScaledDotProductAttention)
-- ✅ 支持因果掩码和填充掩码
-- ✅ 编写了完整的测试用例
+- ✅ 实现了缩放点积注意力机制 (ScaledDotProductAttention) 支持因果掩码和填充掩码
 - ✅ 理解并实现多头注意力机制，掌握分头计算与合并的原理
 - ✅ 位置编码：正弦余弦位置编码
 - ✅ 前馈网络：位置级前馈网络
@@ -52,3 +50,5 @@ Week 10: ⬜ 最终测试、⬜ 性能基准评估、⬜ 撰写项目文档
 
 ### day03
 - ✅ 词嵌入层 - 文本到向量的转换
+- ✅ 解码器 - 目标序列生成
+- ✅ 完整Transformer - Encoder-Decoder架构

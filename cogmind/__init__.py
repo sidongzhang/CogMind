@@ -5,6 +5,8 @@ from .layer_norm import LayerNorm
 from .residual import ResidualConnection, PreNormResidual, PostNormResidual
 from .encoder import TransformerEncoderLayer, TransformerEncoder
 from .embedding import TokenEmbedding, SharedEmbedding, Embeddings
+from .decoder import TransformerDecoderLayer, TransformerDecoder
+from .transformer import Transformer
 
 __all__ = [
     'ScaledDotProductAttention', 
@@ -20,5 +22,8 @@ __all__ = [
     'TransformerEncoder',
     'TokenEmbedding',
     'SharedEmbedding',
-    'Embeddings'
+    'Embeddings',
+    'TransformerDecoderLayer',
+    'TransformerDecoder',
+    'Transformer'
 ]
