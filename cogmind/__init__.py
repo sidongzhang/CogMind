@@ -8,6 +8,9 @@ from .embedding import TokenEmbedding, SharedEmbedding, Embeddings
 from .decoder import TransformerDecoderLayer, TransformerDecoder
 from .transformer import Transformer
 from .loss import LabelSmoothingCrossEntropy
+from .optimizer import NoamOptimizer, WarmupScheduler
+from .trainer import Trainer
+from .dataset import TranslationDataset, collate_fn
 
 __all__ = [
     'ScaledDotProductAttention', 
@@ -27,5 +30,10 @@ __all__ = [
     'TransformerDecoderLayer',
     'TransformerDecoder',
     'Transformer',
-    'LabelSmoothingCrossEntropy'
+    'LabelSmoothingCrossEntropy',
+    'NoamOptimizer',
+    'WarmupScheduler',
+    'Trainer',
+    'TranslationDataset',
+    'collate_fn'
 ]
